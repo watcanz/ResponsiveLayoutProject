@@ -111,6 +111,10 @@ a:hover {
   padding: 0 0 10px;
 }
 
+.flex {
+  padding: 0 25px 0;
+}
+
 .card {
   transition: all .5s;
 }
@@ -308,6 +312,26 @@ a:hover {
   }
 
   /* ---- Main ---- */
+
+  .card {
+    margin: 30px auto;
+    padding: 20px 30px 20px;
+    max-width: 500px;
+    text-align: left;
+    background: #eee;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    color: #7f7f7f;
+  }
+
+  .flex {
+    display: flex; 
+    flex-direction: column;
+    max-width: 1600px;
+    justify-content: space-around;
+    margin: 25px auto;
+    background: #fff;
+  }  
 
   .portfolio {
       background: #fff;
