@@ -1,5 +1,9 @@
 /* ---- Base Styles --- */
 
+* { 
+  box-sizing: border-box;
+}
+
 body {
 font-family: 'Dosis', sans-serif;
 background: #fafafa;
@@ -11,7 +15,6 @@ background: #fafafa;
 
 .container{
   margin-top: 25px;
-
 }
 
 .clearfix::after {
@@ -31,10 +34,11 @@ a:visited,
 a:active {
   color: #4a4a4a;
   text-decoration: none;
+  transition: all .5s;
 }
 
 a:hover {
-
+  color: #ff9904;
 }
 /* ---- Navigation ---- */
 
@@ -107,11 +111,6 @@ a:hover {
   padding: 0 0 10px;
 }
 
-.col h3 {
-}
-
-
-
 /* ---- Footer ---- */
 
 .footer-container {
@@ -148,13 +147,16 @@ a:hover {
   float: left;
   }
 
-  .main-nav,
-  .main-nav li {
+  .main-nav {
     display: block;
     float: right;
-    background: none;
   }
+  
+  .main-nav li {
+    float: left;
+    background: none;
 
+  }
 
   /* ---- Header ---- */
 
@@ -184,7 +186,25 @@ a:hover {
 
   /* ---- Main ---- */
 
-  .portfolio {
+  .card {
+    margin: 30px;
+    padding: 20px 30px 20px;
+    max-width: 500px;
+    text-align: left;
+    background: #eee;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+  }
+
+  .flex {
+      display: flex; 
+      max-width: 1600px;
+      justify-content: space-around;
+      margin: 25px auto;
+      background:#fff;
+  }
+
+.portfolio {
     background: #fff;
   }
 
@@ -197,22 +217,28 @@ a:hover {
     width: 33%;
     max-width: 1600px;
     float: left;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
   }
 
   .col p {
     font-size: 1.0em;
-    margin: 0 15px 0;
+    padding: 25px;
   }
 
   .col h3 {
     font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .col img {
     width: 50%;
   }
 
+  .col.btpics {
+    min-height: 250px;
+
+  }
   /* ---- Footer ---- */
 
   .footer-container {
@@ -297,7 +323,7 @@ a:hover {
   }
 
   .col h3 {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 
   .col img {
