@@ -5,8 +5,8 @@
 }
 
 body {
-font-family: 'Dosis', sans-serif;
-background: #fafafa;
+  font-family: 'Dosis', sans-serif;
+  background: #fafafa;
 }
 
 .wrapper {
@@ -18,7 +18,7 @@ background: #fafafa;
 }
 
 .clearfix::after {
-  content:"";
+  content: "";
   display: table;
   clear: both;
 }
@@ -40,6 +40,7 @@ a:active {
 a:hover {
   color: #ff9904;
 }
+
 /* ---- Navigation ---- */
 
 .name {
@@ -62,28 +63,27 @@ a:hover {
 
 /* ---- Header ---- */
 
-.top-header {
-    width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
-    position: relative;
-  }
+  .top-header {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  position: relative;
+}
 
-  .top-header p {
-    font-size: 1.2em;
-    text-align: center;
-    width: 100%;
-    color: #7f7f7f;
-  }
- 
-  .top-header-img {
-    max-width: 200px;
-    padding: 10px 0;
-    border: 10px solid #fff;
-    border-bottom: 15px solid #fff;
-    box-shadow: 3px 3px 3px #777;
-    }
+.top-header p {
+  font-size: 1.2em;
+  text-align: center;
+  width: 100%;
+  color: #7f7f7f;
+}
 
+.top-header-img {
+  max-width: 200px;
+  padding: 10px 0;
+  border: 10px solid #fff;
+  border-bottom: 15px solid #fff;
+  box-shadow: 3px 3px 3px #777;
+}
 
 /* ---- Main ---- */
 
@@ -111,6 +111,15 @@ a:hover {
   padding: 0 0 10px;
 }
 
+.card {
+  transition: all .5s;
+}
+
+.card:hover {
+  border-bottom: 4px solid #ff9904;
+  border-radius: 6px;
+}
+
 /* ---- Footer ---- */
 
 .footer-container {
@@ -118,7 +127,7 @@ a:hover {
 }
 
 .footer-container p {
-  margin:0;
+  margin: 0;
 }
 
 .footer-name {
@@ -129,8 +138,6 @@ a:hover {
   float: right;
 }
 
-
-
 @media (min-width:769px) {
 
   .wrapper {
@@ -138,24 +145,22 @@ a:hover {
     margin: 0 auto;
   }
 
-
   /* ---- Navigation ---- */
 
   .name {
-  background: none;
-  font-size: 1.5em;
-  float: left;
+    background: none;
+    font-size: 1.5em;
+    float: left;
   }
 
   .main-nav {
     display: block;
     float: right;
   }
-  
+
   .main-nav li {
     float: left;
     background: none;
-
   }
 
   /* ---- Header ---- */
@@ -181,8 +186,7 @@ a:hover {
     border: 10px solid #fff;
     border-bottom: 25px solid #fff;
     box-shadow: 3px 3px 3px #777;
-    }
-
+  }
 
   /* ---- Main ---- */
 
@@ -194,17 +198,18 @@ a:hover {
     background: #eee;
     border-bottom: 4px solid #ccc;
     border-radius: 6px;
+    color: #7f7f7f;
   }
 
   .flex {
-      display: flex; 
-      max-width: 1600px;
-      justify-content: space-around;
-      margin: 25px auto;
-      background:#fff;
+    display: flex; 
+    max-width: 1600px;
+    justify-content: space-around;
+    margin: 25px auto;
+    background: #fff;
   }
 
-.portfolio {
+  .portfolio {
     background: #fff;
   }
 
@@ -239,6 +244,7 @@ a:hover {
     min-height: 250px;
 
   }
+
   /* ---- Footer ---- */
 
   .footer-container {
@@ -256,9 +262,7 @@ a:hover {
     text-align: right;
     float: right;
     width: 50%;
-
   }
-
 }
 
 @media (min-width:321px) and (max-width: 768px){
@@ -268,8 +272,8 @@ a:hover {
   }
 
   .name {
-  background: none;
-  font-size: 1.5em;
+    background: none;
+    font-size: 1.5em;
   }
 
   .main-nav,
@@ -292,7 +296,7 @@ a:hover {
     font-size: 1.5em;
     color: #7f7f7f;
   }
- 
+
   .top-header-img {
     float: right;
     max-width: 225px;
@@ -301,12 +305,12 @@ a:hover {
     border: 10px solid #fff;
     border-bottom: 25px solid #fff;
     box-shadow: 3px 3px 3px #777;
-    }
+  }
 
   /* ---- Main ---- */
 
   .portfolio {
-    background: #fff;
+      background: #fff;
   }
 
   .col {
@@ -329,7 +333,4 @@ a:hover {
   .col img {
     width: 65%;
   }
-  
-  
-
-  }
+}
