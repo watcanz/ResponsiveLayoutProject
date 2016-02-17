@@ -1,0 +1,309 @@
+/* ---- Base Styles --- */
+
+body {
+font-family: 'Dosis', sans-serif;
+background: #fafafa;
+}
+
+.wrapper {
+  padding: 0 1em;
+}
+
+.container{
+  margin-top: 25px;
+
+}
+
+.clearfix::after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+p {
+  padding: 5px;
+}
+
+/* ---- Links ---- */
+
+a:link,
+a:visited,
+a:active {
+  color: #4a4a4a;
+  text-decoration: none;
+}
+
+a:hover {
+
+}
+/* ---- Navigation ---- */
+
+.name {
+  font-size: 1.25em;
+}
+
+.name,
+.main-nav li {
+  text-align: center;
+  background: #fff;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.name a,
+.main-nav a {
+  padding: 10px 15px;
+  display: block;
+}
+
+/* ---- Header ---- */
+
+.top-header {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .top-header p {
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+    color: #7f7f7f;
+  }
+ 
+  .top-header-img {
+    max-width: 200px;
+    padding: 10px 0;
+    border: 10px solid #fff;
+    border-bottom: 15px solid #fff;
+    box-shadow: 3px 3px 3px #777;
+    }
+
+
+/* ---- Main ---- */
+
+.portfolio {
+  background: #fff;
+}
+
+.portfolio h2 {
+  text-align: center;
+}
+
+.col {
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.col img {
+  width: 60%;
+  margin-top: 5px;
+}
+
+.col p {
+  padding: 0 0 10px;
+}
+
+.col h3 {
+}
+
+
+
+/* ---- Footer ---- */
+
+.footer-container {
+  text-align: center;
+}
+
+.footer-container p {
+  margin:0;
+}
+
+.footer-name {
+  float: left;
+}
+
+.footer-top-link {
+  float: right;
+}
+
+
+
+@media (min-width:769px) {
+
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+
+  /* ---- Navigation ---- */
+
+  .name {
+  background: none;
+  font-size: 1.5em;
+  float: left;
+  }
+
+  .main-nav,
+  .main-nav li {
+    display: block;
+    float: right;
+    background: none;
+  }
+
+
+  /* ---- Header ---- */
+
+  .top-header {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .top-header p {
+    text-align: left;
+    font-size: 1.5em;
+    color: #7f7f7f;
+  }
+
+  .top-header-img {
+    float: right;
+    max-width: 275px;
+    margin-left: 150px;
+    padding: 10px 0;
+    border: 10px solid #fff;
+    border-bottom: 25px solid #fff;
+    box-shadow: 3px 3px 3px #777;
+    }
+
+
+  /* ---- Main ---- */
+
+  .portfolio {
+    background: #fff;
+  }
+
+  .portfolio h2 {
+    text-align: center;
+  }
+
+  .col {
+    display: inline-block;
+    width: 33%;
+    max-width: 1600px;
+    float: left;
+    margin-bottom: 25px;
+  }
+
+  .col p {
+    font-size: 1.0em;
+    margin: 0 15px 0;
+  }
+
+  .col h3 {
+    font-size: 1.2em;
+  }
+
+  .col img {
+    width: 50%;
+  }
+
+  /* ---- Footer ---- */
+
+  .footer-container {
+    width: 65%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .footer-name {
+    float: left;
+    width: 50%;
+  }
+
+  .footer-top-link {
+    text-align: right;
+    float: right;
+    width: 50%;
+
+  }
+
+}
+
+@media (min-width:321px) and (max-width: 768px){
+
+  .container {
+    text-align: center;
+  }
+
+  .name {
+  background: none;
+  font-size: 1.5em;
+  }
+
+  .main-nav,
+  .main-nav li {
+    display: inline-block;
+    background: none;
+  }
+
+  /* ---- Header ---- */
+
+  .top-header {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .top-header p {
+    text-align: left;
+    font-size: 1.5em;
+    color: #7f7f7f;
+  }
+ 
+  .top-header-img {
+    float: right;
+    max-width: 225px;
+    margin-left: 50px;
+    padding: 10px 0;
+    border: 10px solid #fff;
+    border-bottom: 25px solid #fff;
+    box-shadow: 3px 3px 3px #777;
+    }
+
+  /* ---- Main ---- */
+
+  .portfolio {
+    background: #fff;
+  }
+
+  .col {
+    text-align: center;
+    display: inline-block;
+    max-width: 768px;
+    width: 50%;
+    float: left;
+  }
+
+  .col p {
+    font-size: 1.2em;
+    margin: 0 25px 0;
+  }
+
+  .col h3 {
+    font-size: 1.4em;
+  }
+
+  .col img {
+    width: 65%;
+  }
+  
+  
+
+  }
