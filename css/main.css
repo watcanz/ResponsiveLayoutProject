@@ -142,6 +142,10 @@ a:hover {
   float: right;
 }
 
+.main-header.foothide {
+  display: none;
+}
+
 @media (min-width:769px) {
 
   .wrapper {
@@ -150,6 +154,10 @@ a:hover {
   }
 
   /* ---- Navigation ---- */
+
+  .main-header.foothide {
+    display: block;
+  }
 
   .name {
     background: none;
@@ -263,9 +271,25 @@ a:hover {
   }
 
   .footer-top-link {
-    text-align: right;
-    float: right;
-    width: 50%;
+    display: none;
+  }
+
+  .footer-name {
+    display: none;
+  }
+
+  .main-header.foothide {
+    display: block;
+  }
+
+  #name-foot {
+    background: none;
+    font-size: 1.0em;
+    float: left;
+  }
+
+  .container.clearfix.foot {
+    margin-top: 5px;
   }
 }
 
@@ -277,12 +301,16 @@ a:hover {
 
   .name {
     background: none;
-    font-size: 1.5em;
+    font-size: 1.0em;
   }
 
-  .main-nav,
-  .main-nav li {
-    display: inline-block;
+  .main-nav.foot {
+    display: block;
+    float: right;
+  }
+
+  .main-nav.foot li {
+    float: left;
     background: none;
   }
 
@@ -356,5 +384,33 @@ a:hover {
 
   .col img {
     width: 65%;
+  }
+
+  /* ---- Footer ---- */
+
+   .main-header.foothide {
+    display: block;
+  }
+
+  .footer-top-link {
+    display: none;
+  }
+
+  .footer-name {
+    display: none;
+  }
+
+  .main-header.foothide {
+    display: block;
+  }
+
+  #name-foot {
+    background: none;
+    font-size: 1.0em;
+    float: left;
+  }
+
+  .container.clearfix.foot {
+    margin-top: 5px;
   }
 }
