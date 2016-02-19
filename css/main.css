@@ -116,6 +116,13 @@ a:hover {
 }
 
 .card {
+  margin: 30px auto
+  max-width: 500px;
+  text-align: center;
+  background: #eee;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  color: #7f7f7f;
   transition: all .5s;
 }
 
@@ -146,7 +153,130 @@ a:hover {
   display: none;
 }
 
-@media (min-width:769px) {
+@media (min-width: 768px) {
+
+  .container {
+    text-align: center;
+  }
+
+  .name {
+    background: none;
+    font-size: 1.0em;
+  }
+
+  .main-nav.foot {
+    display: block;
+    float: right;
+  }
+
+  .main-nav.foot li {
+    float: left;
+    background: none;
+  }
+
+  /* ---- Header ---- */
+
+  .top-header {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .top-header p {
+    text-align: left;
+    font-size: 1.5em;
+    color: #7f7f7f;
+  }
+
+  .top-header-img {
+    float: right;
+    max-width: 225px;
+    margin-left: 50px;
+    padding: 10px 0;
+    border: 10px solid #fff;
+    border-bottom: 25px solid #fff;
+    box-shadow: 3px 3px 3px #777;
+  }
+
+  /* ---- Main ---- */
+
+  .card {
+    margin: 30px;
+    padding: 20px 30px 20px;
+    max-width: 500px;
+    text-align: left;
+    background: #eee;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
+    color: #7f7f7f;
+  }
+
+  .flex {
+    display: flex; 
+    flex-direction: row;
+    max-width: 1024px;
+    justify-content: space-around;
+    margin: 25px auto;
+    background: #fff;
+  }  
+
+  .portfolio {
+      background: #fff;
+  }
+
+  .col {
+    text-align: center;
+    display: inline-block;
+    max-width: 1024px;
+    min-height: 350px;
+    width: 50%;
+    float: left;
+  }
+
+  .col p {
+    font-size: 1.2em;
+    margin: 0 25px 0;
+  }
+
+  .col h3 {
+    font-size: 1.2em;
+  }
+
+  .col img {
+    width: 65%;
+  }
+
+  /* ---- Footer ---- */
+
+   .main-header.foothide {
+    display: block;
+  }
+
+  .footer-top-link {
+    display: none;
+  }
+
+  .footer-name {
+    display: none;
+  }
+
+  .main-header.foothide {
+    display: block;
+  }
+
+  #name-foot {
+    background: none;
+    font-size: 1.0em;
+    float: left;
+  }
+
+  .container.clearfix.foot {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width:1024px) {
 
   .wrapper {
     width: 80%;
@@ -215,9 +345,10 @@ a:hover {
 
   .flex {
     display: flex; 
+    flex-direction: row;
     max-width: 1600px;
     justify-content: space-around;
-    margin: 25px auto;
+    margin: 25px;
     background: #fff;
   }
 
@@ -233,6 +364,7 @@ a:hover {
     display: inline-block;
     width: 33%;
     max-width: 1600px;
+    min-height: 350px;
     float: left;
     margin-bottom: 15px;
   }
@@ -268,128 +400,6 @@ a:hover {
   .footer-name {
     float: left;
     width: 50%;
-  }
-
-  .footer-top-link {
-    display: none;
-  }
-
-  .footer-name {
-    display: none;
-  }
-
-  .main-header.foothide {
-    display: block;
-  }
-
-  #name-foot {
-    background: none;
-    font-size: 1.0em;
-    float: left;
-  }
-
-  .container.clearfix.foot {
-    margin-top: 5px;
-  }
-}
-
-@media (min-width:321px) and (max-width: 768px){
-
-  .container {
-    text-align: center;
-  }
-
-  .name {
-    background: none;
-    font-size: 1.0em;
-  }
-
-  .main-nav.foot {
-    display: block;
-    float: right;
-  }
-
-  .main-nav.foot li {
-    float: left;
-    background: none;
-  }
-
-  /* ---- Header ---- */
-
-  .top-header {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    position: relative;
-  }
-
-  .top-header p {
-    text-align: left;
-    font-size: 1.5em;
-    color: #7f7f7f;
-  }
-
-  .top-header-img {
-    float: right;
-    max-width: 225px;
-    margin-left: 50px;
-    padding: 10px 0;
-    border: 10px solid #fff;
-    border-bottom: 25px solid #fff;
-    box-shadow: 3px 3px 3px #777;
-  }
-
-  /* ---- Main ---- */
-
-  .card {
-    margin: 30px auto;
-    padding: 20px 30px 20px;
-    max-width: 500px;
-    text-align: left;
-    background: #eee;
-    border-bottom: 4px solid #ccc;
-    border-radius: 6px;
-    color: #7f7f7f;
-  }
-
-  .flex {
-    display: flex; 
-    flex-direction: column;
-    max-width: 1600px;
-    justify-content: space-around;
-    margin: 25px auto;
-    background: #fff;
-  }  
-
-  .portfolio {
-      background: #fff;
-  }
-
-  .col {
-    text-align: center;
-    display: inline-block;
-    max-width: 768px;
-    width: 50%;
-    float: left;
-  }
-
-  .col p {
-    font-size: 1.2em;
-    margin: 0 25px 0;
-  }
-
-  .col h3 {
-    font-size: 1.2em;
-  }
-
-  .col img {
-    width: 65%;
-  }
-
-  /* ---- Footer ---- */
-
-   .main-header.foothide {
-    display: block;
   }
 
   .footer-top-link {
