@@ -63,7 +63,7 @@ a:hover {
 
 /* ---- Header ---- */
 
-  .top-header {
+.top-header {
   width: 100%;
   max-width: 200px;
   margin: 0 auto;
@@ -103,7 +103,7 @@ a:hover {
 }
 
 .col img {
-  width: 60%;
+  width: 100%;
   margin-top: 5px;
 }
 
@@ -116,7 +116,7 @@ a:hover {
 }
 
 .card {
-  margin: 30px auto
+  margin: 30px auto;
   max-width: 500px;
   text-align: center;
   background: #eee;
@@ -162,6 +162,15 @@ a:hover {
   .name {
     background: none;
     font-size: 1.0em;
+  }
+
+  .main-nav {
+    display: inline-block;
+  }
+
+  .main-nav li {
+    float: left;
+    background: none;
   }
 
   .main-nav.foot {
@@ -229,7 +238,7 @@ a:hover {
     text-align: center;
     display: inline-block;
     max-width: 1024px;
-    min-height: 350px;
+    min-height: 450px;
     width: 50%;
     float: left;
   }
@@ -244,7 +253,8 @@ a:hover {
   }
 
   .col img {
-    width: 65%;
+    width: 100%;
+    padding-left: 25px;
   }
 
   /* ---- Footer ---- */
@@ -381,12 +391,12 @@ a:hover {
   }
 
   .col img {
-    width: 50%;
+    width: 100%;
+    padding-left: 25px;
   }
 
   .col.btpics {
     min-height: 300px;
-
   }
 
   /* ---- Footer ---- */
